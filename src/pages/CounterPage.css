@@ -1,0 +1,18 @@
+.CounterPage .count-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.CounterPage .count {
+  flex: 1 1 auto;
+}
+
+.CounterPage .count .count-name {
+  font-weight: 600;
+}
+
+.CounterPage .count .count-value {
+  min-width: 80px;
+  display: inline-block;
+}

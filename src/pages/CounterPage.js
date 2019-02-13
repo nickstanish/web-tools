@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './CounterPage.css';
 
 function Count(props) {
   const { name, value } = props;
@@ -29,12 +30,14 @@ export default class CounterPage extends Component {
     const alphabeticCount = (text.match(/[a-z]/gi) || []).length;
     const whitespaceCount = (text.match(/\s/g) || []).length;
     return (
-      <div id="web-counter">
+      <div className="CounterPage">
         <h1>Text Counter</h1>
-        <Count name="Character Count" value={characterCount} />
-        <Count name="Word Count" value={wordCount} />
-        <Count name="Whitespace Count" value={whitespaceCount} />
-        <Count name="Alphabetic Count" value={alphabeticCount} />
+        <div className="count-row">
+          <Count name="Characters" value={characterCount} />
+          <Count name="Words" value={wordCount} />
+          <Count name="Whitespace" value={whitespaceCount} />
+          <Count name="Alphanumeric" value={alphabeticCount} />
+        </div>
         <textarea value={this.state.text} onChange={this.onText} />
       </div>
     );
