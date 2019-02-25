@@ -1,3 +1,17 @@
+:root {
+  --color1: #004c77;
+  --color2: #82b7c5;
+  --color3: rgba(245, 239, 166, 1);
+  --color4: rgba(245, 166, 92, 1);
+  --color5: rgba(171, 52, 40, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// https://coolors.co/2d728f-3b8ea5-f5efa6-f5a65c-ab3428
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -5,13 +19,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  padding: 1rem 2rem;
+  background-color: var(--color1);
+  padding: 0.8rem 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -67,4 +81,22 @@ textarea {
   padding: 10px;
   min-height: 200px;
   resize: vertical;
+}
+
+nav {
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 0.3rem;
+}
+
+nav li a,
+nav li a:hover,
+nav li a:visited {
+  color: white;
 }
