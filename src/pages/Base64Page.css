@@ -1,0 +1,15 @@
+.Base64Page textarea {
+  resize: none;
+}
+
+.Base64Page textarea.error {
+  border: 1px solid var(--color5);
+}
+
+.Base64Page-pane-wrapper {
+  display: flex;
+}
+
+.Base64Page-pane {
+  flex: 1;
+}
